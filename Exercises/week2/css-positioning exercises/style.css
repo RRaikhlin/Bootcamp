@@ -1,0 +1,37 @@
+#parent{
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background-color: blue;
+    
+    
+     margin-left: 000px;
+     margin-top: 000px;
+     margin-right: 000px;
+     margin-bottom: 000px;
+
+
+   }
+
+#child1{
+height: 50;
+width: 400;
+
+ position: absolute;
+ background-color: red;
+ 
+ top: 120px; 
+}
+
+#child2{
+ 
+  position: absolute;
+  margin: 0;
+  bottom: 10px;
+  right: 10px;
+  background-color: yellowgreen;
+ 
+ }
+
+ 
