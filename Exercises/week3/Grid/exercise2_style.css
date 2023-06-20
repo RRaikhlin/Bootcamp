@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+  #grid_page{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 1fr 6fr;
+    grid-template-areas: 
+    "H H"
+    "S M";
+}
+
+
+#header{
+grid-area: H;
+display: grid;
+background-color: blueviolet;
+}
+
+#side_bar {
+    grid-area: S;
+    display: grid;
+    background-color: rgb(43, 76, 226); 
+    grid-template-rows: repeat(15, 1fr) ;
+  
+}
+
+#main_part {
+    grid-area: M;
+    display: grid;
+    background-color: rgb(43, 226, 217);  
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: 1fr 18fr;
+    grid-template-areas: 
+    "V V"
+    "C R";
+}
+
+#main_header {
+    grid-area: V;
+    display: grid;
+    background-color: rgb(3, 49, 34);
+
+}
+
+#main_central {
+    grid-area: C;
+    display: grid;
+    background-color: rgb(34, 82, 67);
+    grid-template-rows: repeat(15, 1fr) ;
+    grid-template-columns: repeat(6, 1fr) ;
+
+}
+
+.central_head {
+    grid-column: span 6;
+    background-color: rgb(87, 116, 107);
+}
+
+.central_first {
+    grid-column: 2 / 3;
+}
+
+#main_right {
+    grid-area: R;
+    display: grid;
+    background-color: rgb(103, 170, 148);
+
+}
+
+
+
+

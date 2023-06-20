@@ -1,0 +1,15 @@
+.container {
+    display: grid;
+}
+
+
+.col-md-4 {
+    background-color: aqua;
+    border: solid;
+    margin: 30px;
+}
+
+.col-md-3 {
+    background-color: aqua;
+    border: solid;
+}

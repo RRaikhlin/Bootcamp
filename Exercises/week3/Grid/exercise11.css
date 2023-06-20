@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+#chat{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 15fr 1fr;
+    grid-template-areas: 
+    "f c"
+    "f i";
+}
+
+
+p {
+    display: inline;
+    
+    height:auto;
+    margin: 0;
+    
+
+}
+
+.time {
+    margin-top: 25;
+}
+
+.right {
+    justify-self: end;
+}
+
+.left {
+    justify-self: start;
+}
+
+.text-container {
+  
+    display: grid;
+    grid-template-columns: auto auto;
+    font-style: italic;
+    padding: 10;   
+    align-self: center;
+    background-color: chartreuse;
+    grid-template-rows: auto auto;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.text-container.left {
+    background-color: grey;
+}
+
+
+#friends{
+    grid-area: f;
+    display: grid;
+    background-color: blueviolet;
+   
+
+}
+
+.friend {
+    background-color: rgb(143, 109, 175);
+    height:min-content;
+    padding: 10px;
+    margin: 15px;
+}
+
+#chatbox{
+    grid-area: c;
+    display: grid;
+    padding: 0 20px;
+      
+}
+
+#input{
+    grid-area: i;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+
+}
+
+#Send {
+        background-color: blueviolet;
+        display: grid;
+        place-items: center;
+        width: 100%;
+}

@@ -1,0 +1,33 @@
+.head{
+  grid-area: h;
+  background-color: yellow;
+}
+
+.side-nav{
+  grid-area: s;
+  background-color: red;
+}
+
+.main{
+  grid-area: m;
+  background-color:aquamarine;
+}
+
+.foot{
+  grid-area: f;
+  background-color: gray;
+}
+
+
+#container{
+  grid-template-areas: 
+"s h"
+"s m"
+"f f";
+
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 2fr 3fr;
+  grid-gap: 10px
+}
