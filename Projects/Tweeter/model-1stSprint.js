@@ -32,7 +32,7 @@ getPosts = function () {
 }
 
 addPost = function (text) {
-  if (text.trim() ==""){ return}
+  if (text.trim ==""){ return}
 
    post ={
     text : text,
@@ -57,7 +57,7 @@ getPostIndex = function(postId) {
 
 addComment = function (text, postId) {
   let ind = getPostIndex(postId)
-  if (ind > -1 && text.trim() !=""){
+  if (ind > -1 && text.trim !=""){
     const post = posts[ind]
     const com = post.comments
     let comment = {
@@ -100,7 +100,7 @@ tweeter.addComment(2, "first_comment")
 tweeter.addComment(2, "second_comment")
 tweeter.removeComment(2, 2)
 */
-/*
+
 const tweeter = Tweeter()
 
 tweeter.addPost("This is my own post!")
@@ -134,5 +134,3 @@ tweeter.removeComment("p2", "c6")
 console.log(tweeter.getPosts())
 //This comment should be removed:
 //{id: "c6", text: "Haha second place what a joke."}
-
-*/
