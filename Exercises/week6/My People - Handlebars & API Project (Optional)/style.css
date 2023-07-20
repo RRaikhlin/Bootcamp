@@ -1,0 +1,29 @@
+#peoples {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.person {
+    background-color: gray;
+    text-align: center;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+    color: white;
+
+}
+
+.person:hover {
+    background-color: green;
+    text-align: center;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+
+}
+
+.link {
+    color: blue;
+    text-decoration: underline;
+    font-weight: 700;
+    cursor: pointer;
+}
