@@ -78,8 +78,6 @@ removeComment = function (postId, commentId) {
 }
 
 
-
-
 return {
   getPosts : getPosts,
   addPost : addPost,
