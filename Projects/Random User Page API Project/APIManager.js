@@ -28,6 +28,13 @@ getData = async function(){
     this.p1.quote = dataPerson.quote
   }  
 
+  getGifByPokemon = async function(pokeName) {
+   const newApis = await $.get(`https://api.giphy.com/v1/gifs/search?api_key=YHkH8Svwjypn4v1pjX5Gv7iqEBWN27mH&q=${pokeName}&limit=1&offset=0&rating=g&lang=en&bundle=messaging_non_clips`)
+   const newApi = newApis.data[0].embed_url
+   
+   return newApi
+  }
+
   getRandomPokemon = async function()  {
     const randomId = Math.floor(Math.random() * totalPokemon) + 1
     const response = await $.get(url3+randomId)
@@ -38,7 +45,16 @@ getData = async function(){
     };
   
     this.p1.pokemon = pokemon
+  //  getGifByPokemon(pokemon.name)
+
   }
+
+  
+
+getGif = async function () {
+  this.getRandomPokemon().then(() => this.getGifByPokemon(this.p1.pokemon.name)).then(response => this.p1.pokemonGif=response)
+}
+
 
   getFoodText = async function()  {
     const foodText = await $.get(url4)
@@ -46,9 +62,11 @@ getData = async function(){
     this.p1.foodText = foodText
  
   }
+
+
     
   pushPerson = function(){
-    return Promise.all([this.getData(), this.getDataKayne(), this.getRandomPokemon(), this.getFoodText()]).then(() => personsData.push({id:this.p1.id, person: this.p1}))
+    return Promise.all([this.getData(), this.getDataKayne(), this.getRandomPokemon(), this.getFoodText(), this.getGif()]).then(() => personsData.push({id:this.p1.id, person: this.p1}))
   }
 
 }

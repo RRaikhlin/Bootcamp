@@ -115,11 +115,17 @@ button {
     vertical-align: middle;
 }
 
+.gif-pic {
+  /*  border-radius: 100px;   */
+}
+
 .pokemon-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
     font-size: 20px;
     padding: 1vw;
     display: grid;
-    grid-template-columns: minmax(150px, 150px) minmax(200px, 400px);
+    
     align-items: center;
     justify-self: baseline;
     border-bottom: 1px solid #2c3e50;

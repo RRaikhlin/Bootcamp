@@ -39,6 +39,12 @@
       
 </script>
 
+<script id="store-gif" type="text/x-handlebars-template"> 
+   <iframe class="gif-pic" src={{gifUrl}}></iframe>
+
+</script>
+
+
 <script id="store-friends" type="text/x-handlebars-template"> 
     <p>
         {{#each friends}}
@@ -70,7 +76,9 @@
         </div>	
         <div class="quote-container"></div>	
         <div class="content-container">	
-            <div class="pokemon-container"></div>	
+            <div class="pokemon-container">
+             
+            </div>	
             <div class="meat-container"></div>	
         </div>	
         <div class="friends">	

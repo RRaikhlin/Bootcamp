@@ -3,6 +3,7 @@ const loadUser = async function() {
     const data = new APIManager(p1)
     const render  = new Renderer(data, p1)
     await data.pushPerson()
+//    await data.getGif()
     render.render()
 }
 

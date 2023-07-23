@@ -64,7 +64,17 @@ randomPokemon = function() {
     var newHTML = template({pokemonName, sprite})
     $('.pokemon-container').append(newHTML)
 
+
+    const gifUrl = this.person.pokemonGif
+    var source = $('#store-gif').html()
+    var template = Handlebars.compile(source)
+    var newHTML = template({gifUrl})
+    $('.pokemon-container').append(newHTML)
+
+
+
 }
+
 
 
 
